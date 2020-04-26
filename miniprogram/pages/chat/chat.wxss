@@ -1,0 +1,61 @@
+.content-box{
+  /* display: flex; */
+  margin-bottom: 100rpx;
+}
+.left{
+  /* width: 50%; */
+}
+.left image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.right{
+  /* width: 50%; */
+}
+.right image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.robot-message{
+  margin: 10rpx;
+  display: flex;
+}
+.ren-message{
+  margin: 10rpx;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.msg{
+  margin: 5rpx;
+  border: 1rpx solid #3e6;
+  border-radius: 10rpx; 
+  padding: 10rpx;
+  color: black;
+  background-color: #3e6;
+  width: 60%; 
+  text-align: center;
+  font-size: 36rpx;
+}
+.input-box{
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+}
+.input-left{
+  width: 85%;
+}
+.btn-right{
+  width: 15%;
+  background-color: #3e2; 
+  text-align: center;
+  padding: 20rpx;
+}

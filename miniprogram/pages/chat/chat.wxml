@@ -1,0 +1,34 @@
+<view class="content-box">
+  <view class="chat" wx:for="{{msg}}" wx:key="index">
+    <view class="left">
+      <view class="robot-message" wx:if="{{index%2==0}}">
+        <image class="robot" src="/images/robot.jpg"></image>
+        <text class="msg">{{item}}</text>
+      </view>
+    </view>
+    <view class="right">
+        <view class="ren-message" wx:if="{{index%2!=0}}">
+          <view class="image">
+            <open-data type="userAvatarUrl"></open-data>
+          </view>
+          <text class="msg">{{item}}</text>
+        </view>
+    </view>
+    
+  </view>
+</view>
+<view class="input-box">
+<view class="input-left">
+  <van-cell-group>
+  <van-field
+    value="{{ value }}"
+    placeholder=""
+    border="{{ false }}"
+    bind:change="onChange"
+  />
+  </van-cell-group>
+  </view>
+  <view class="btn-right" bindtap="send">
+    发送
+  </view>
+</view>
